@@ -18,6 +18,11 @@ INSERT INTO tb_course (name, img_Uri, img_Gray_Uri) VALUES ('Bootcamp Web Develo
 INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('1.0', TIMESTAMP WITH TIME ZONE '2020-11-20T00:00:00', TIMESTAMP WITH TIME ZONE '2021-11-20T00:00:00', 1);
 INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('2.0', TIMESTAMP WITH TIME ZONE '2021-11-20T00:00:00', TIMESTAMP WITH TIME ZONE '2022-11-20T00:00:00', 1);
 
-INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Trilha WEB', 'Trilha Principal do Curso', 1, '"C:\ws-bootcampds\dslearn\assets\img\rocket.png"', 1, 1);
-INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Fórum', 'Tire suas dúvidas.', 2, '"C:\ws-bootcampds\dslearn\assets\img\suport.png"', 2, 1);
-INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Lives', 'Lives Exclusivas', 3, '"C:\ws-bootcampds\dslearn\assets\img\community.png"', 0, 1);
+INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Trilha WEB', 'Trilha Principal do Curso', 1, 'C:\ws-bootcampds\dslearn\assets\img\rocket.png', 1, 1);
+INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Fórum', 'Tire suas dúvidas.', 2, 'C:\ws-bootcampds\dslearn\assets\img\suport.png', 2, 1);
+INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Lives', 'Lives Exclusivas', 3, 'C:\ws-bootcampds\dslearn\assets\img\community.png', 0, 1);
+
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Capítulo 1', 'Introdução HTML', 1, 'C:\ws-bootcampds\dslearn\assets\img\html-css.png', 1, null);
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Capítulo 2', 'Introdução CSS', 2, 'C:\ws-bootcampds\dslearn\assets\img\html-css.png', 1, 1);
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Capítulo 3', 'Tópicos Especiais', 3, 'C:\ws-bootcampds\dslearn\assets\img\html-css.png', 1, 2);
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Capítulo 4', 'Projeto Final', 4, 'C:\ws-bootcampds\dslearn\assets\img\html-css.png', 1, 3);
