@@ -29,3 +29,19 @@ INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prer
 
 INSERT INTO tb_enrollment (user_id, offer_id, enroll_Moment, refund_Moment, available, only_Update) Values (1, 1, TIMESTAMP WITHOUT TIME ZONE '2020-11-20T10:00:00', null, true, false);
 INSERT INTO tb_enrollment (user_id, offer_id, enroll_Moment, refund_Moment, available, only_Update) Values (2, 1, TIMESTAMP WITHOUT TIME ZONE '2020-11-20T18:42:00', null, true, false);
+
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('Aula 1 - Capítulo 1', 1, 1)
+INSERT INTO tb_content (id, text_Content, video_Uri) Values (1, 'Material de apoio HTML', 'https://www.youtube.com/watch?v=WzO5QlkjVLA');
+
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('Aula 2 - Capítulo 1', 2, 1)
+INSERT INTO tb_content (id, text_Content, video_Uri) Values (2, 'Material de apoio CSS', 'https://www.youtube.com/watch?v=WzO5QlkjVLA');
+
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('Aula 3 - Capítulo 1', 3, 1)
+INSERT INTO tb_content (id, text_Content, video_Uri) Values (3, 'Projeto Concluído', 'https://www.youtube.com/watch?v=WzO5QlkjVLA');
+
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('Aula 4 - Capítulo 1', 4, 1)
+INSERT INTO tb_task (id, description, question_Count, approval_Count, weight, due_Date) Values (4, 'Projeto Final', 5, 4, 1.0, TIMESTAMP WITHOUT TIME ZONE '2020-11-25T23:59:00' );
+
+INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (1, 1, 1)
+INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (2, 1, 1)
+
