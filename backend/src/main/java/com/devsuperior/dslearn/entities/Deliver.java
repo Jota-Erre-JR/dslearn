@@ -1,4 +1,4 @@
-package com.devsuperior.dslearnbds.entities;
+package com.devsuperior.dslearn.entities;
 
 import java.io.Serializable;
 import java.time.Instant;
@@ -13,7 +13,7 @@ import javax.persistence.JoinColumns;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-import com.devsuperior.dslearnbds.entities.enums.DeliverStatus;
+import com.devsuperior.dslearn.entities.enums.DeliverStatus;
 
 @Entity
 @Table(name = "tb_deliver")

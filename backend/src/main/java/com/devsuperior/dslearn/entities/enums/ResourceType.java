@@ -1,4 +1,4 @@
-package com.devsuperior.dslearnbds.entities.enums;
+package com.devsuperior.dslearn.entities.enums;
 
 public enum ResourceType {
 	
