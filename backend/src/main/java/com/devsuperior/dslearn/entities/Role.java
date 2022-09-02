@@ -19,8 +19,6 @@ public class Role implements Serializable{
 	
 	private String authority;
 	
-	
-
 	public Role() {
 	}
 

@@ -1,11 +1,6 @@
 package com.devsuperior.dslearn.dto;
 
 import java.io.Serializable;
-import java.util.HashSet;
-import java.util.Set;
-
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotBlank;
 
 import com.devsuperior.dslearn.entities.User;
 
@@ -13,14 +8,8 @@ public class UserDTO implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	private Long id;
-	
-	@NotBlank(message = "Campo Obrigatório.")
 	private String name;
-		
-	@Email(message = "Favor inserir um email válido.")
 	private String email;
-		
-	Set<RoleDTO> roles = new HashSet<>();
 	
 	public UserDTO() {
 		
@@ -37,7 +26,6 @@ public class UserDTO implements Serializable{
 		id = entity.getId();
 		name = entity.getName();
 		email = entity.getEmail();
-		entity.getRoles().forEach(role -> this.roles.add(new RoleDTO(role)));
 	}
 
 	public Long getId() {
@@ -63,11 +51,5 @@ public class UserDTO implements Serializable{
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
-	public Set<RoleDTO> getRoles() {
-		return roles;
-	}
-	
-	
 
 }
